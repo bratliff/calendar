@@ -1,0 +1,1 @@
+!function(){$(document).ready(function(){$.getJSON("js/data.json",function(e){var t=e,n=[];$.each(e,function(e){var a=[];a.push(t[e].customer,t[e].date,t[e].event,t[e].length),n.push(a)}),console.log(n)});var e=new Date,t=e.getDate(),n=e.getMonth()+1,a=e.getFullYear();10>t&&(t="0"+t),10>n&&(n="0"+n),e=n+"/"+t+"/"+a,$(".thisweek").html(e);e.getDay()})}();
